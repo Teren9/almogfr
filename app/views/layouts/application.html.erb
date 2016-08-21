@@ -9,12 +9,10 @@
 <body>
 <div class="container">
   <div class="header">
-    <a href="#" class="logo">
-      Almog Friedman
-    </a>
+    <%= link_to "Almog Friedman", root_path, class: "logo"%>
     <div class="nav">
-      <a href="#">Home</a>  |
-      <a href="#">About</a>  |
+      <%= link_to "Home",root_path%>  |
+      <%= link_to "Sample",pages_sample_path%>  |
       <a href="#">Contact</a>
     </div>
   </div>
