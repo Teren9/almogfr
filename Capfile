@@ -1,14 +1,16 @@
-require 'capistrano/bundler'
-require 'capistrano/rails'
-require 'capistrano/rvm'
-set :rvm_type, :user
-set :rvm_ruby_version, '2.3.1'
 
 # Load DSL and Setup Up Stages
 require 'capistrano/setup'
 
 # Includes default deployment tasks
 require 'capistrano/deploy'
+
+require 'capistrano/bundler'
+require 'capistrano/rails'
+require 'capistrano/rvm'
+set :rvm_type, :user
+set :rvm_ruby_version, '2.3.1'
+
 
 # Includes tasks from other gems included in your Gemfile
 #
