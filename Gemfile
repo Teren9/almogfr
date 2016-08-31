@@ -7,8 +7,12 @@ gem 'rails', '4.2.5.1'
 group :production do
 	gem 'pg'
 end
-group :development do 
+group :development do
 	gem 'sqlite3'
+	gem 'capistrano', '~> 3.1.0'
+	gem 'capistrano-bundler', '~> 1.1.2'
+	gem 'capistrano-rails', '~> 1.1.1'
+	gem 'capistrano-rvm', github: "capistrano/rvm"
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
